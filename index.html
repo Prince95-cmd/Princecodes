@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/CSS/index.css">
+  </head>
+  <body>
+    <div class="all">
+      <div class="first">
+        <h1>Kzee's Dance Class</h1>
+        <p>Kindly fill the form to register</p>
+        <h3>About Us</h3>
+        <p>
+          Lorem ipsum, dolor sit amet <span> consectetur</span> adipisicing elit. Ex autem
+          corporis nobis accusamus. Numquam itaque, qui et enim veritatis
+          laboriosam facere tempore corporis omnis laborum? Odit nam dolorem
+          asperiores ea.
+        </p>
+      </div>
+
+      <div class="second">
+        <h2>Sign Up</h2>
+        <form>
+          <label for="firstname">First Name:</label><br />
+          <input
+            name="Firstname"
+            id="firstname"
+            type="text"
+            required
+          /><br /><br />
+          <label for="lastname">Last Name:</label><br />
+          <input
+            name="Lastname"
+            id="lastname"
+            type="text"
+            required
+          /><br /><br />
+          <label for="email">Email:</label><br />
+          <input
+            name="Email"
+            id="email"
+            type="email"
+            required
+          /><br /><br />
+          <label>
+            Gender: <br />
+            <label for="male">Male</label>
+            <input name="Gender" id="male" type="radio" value="MALE" />
+            <label for="female">Female</label>
+            <input name="Gender" id="female" type="radio" value="FEMALE" />
+            <label for="others">Others</label>
+            <input name="Gender" id="others" type="radio" value="OTHERS" />
+          </label>
+          <br /><br />
+          <label for="number">Phone Number:</label> <br />
+          <input
+            name="Phone Number"
+            id="number"
+            type="number"
+            required
+          />
+          <br /><br />
+          <label for="pass">Password:</label><br />
+          <input
+            name="password"
+            id="pass"
+            type="password"
+            pattern=".{5,10}"
+            required
+            title="must be 5 characters min to 10 characters max"
+          />
+          <br /><br />
+          <label for="password">Confirm Password:</label><br />
+          <input
+            name="password"
+            id="password"
+            type="password"
+            pattern=".{5,10}"
+            required
+            title="must be 5 characters min to 10 characters max"
+          />
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
